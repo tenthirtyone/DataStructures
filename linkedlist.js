@@ -4,6 +4,7 @@
 	function linkedList() {
 		var linkedList = {
 			head: getNode(),
+			length: 0,
 			toString: function() {
 				var temp = this.head;
 				var retArr = [];
@@ -20,6 +21,10 @@
 					temp = temp.next;
 				}
 				temp.next = getNode(val);
+				this.length++;
+			},
+			removeNode: function(index) {
+
 			}
 		}
 		return linkedList;
