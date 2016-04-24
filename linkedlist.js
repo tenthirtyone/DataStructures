@@ -49,7 +49,9 @@
 					console.log('Removal position greater than Linked List length');
 				} else  if (position < 0) {
 					console.log('Position must be greater than 0 in a singly Linked List');
-				}else {
+				} else if (position === 0) {
+					this.head = this.head.next;
+				} else {
 					console.log('remove node %s', position);
 					var temp = this.head;
 					while (position !== 1) {
