@@ -27,9 +27,7 @@
 				if (Math.abs(index) > this.length) {
 					console.log('Removal index greater than Linked List length');
 				} else {
-					while (index != 0) {
-
-					}
+		
 				}
 			}
 		}
@@ -52,4 +50,5 @@
 	ll.addNode(6);
 	ll.addNode(9);
 	ll.toString();
+	ll.removeNode(1)
 }());
