@@ -24,6 +24,7 @@
 				this.length++;
 			},
 			insertNode: function(position, val) {
+				console.log('insert node at %s', position) 
 				if (Math.abs(position) > this.length + 1) {
 					console.log('Insert position greater than Linked List length + 1');
 				} else if (position < 0) {
@@ -33,7 +34,6 @@
 					this.head = getNode(val);
 					this.head.next = tempList;
 				} else {
-					console.log('insert node at %s', position) 
 					var temp = this.head;
 					while (position != 1) {
 						temp = temp.next;
