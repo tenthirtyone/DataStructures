@@ -23,7 +23,9 @@
 				temp.next = getNode(val);
 				this.length++;
 			},
-			insertNode: function(index)
+			insertNode: function(position) {
+
+			},
 			removeNode: function(position) {
 				if (Math.abs(index) > this.length) {
 					console.log('Removal position greater than Linked List length');
