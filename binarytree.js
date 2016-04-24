@@ -25,6 +25,9 @@
 			},
 			removeNode: function(val) {
 
+			},
+			toString: function() {
+				console.log(this.root);
 			}
 		}
 	}
