@@ -32,7 +32,7 @@
 					console.log('insert node at %s', position) {
 						var temp = this.head;
 						while (position != 0) {
-
+							temp = temp.next;
 						}
 					}
 				}
