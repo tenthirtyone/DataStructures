@@ -29,4 +29,4 @@ for (var i = 0; i < intArr.length; i++) {
 	}
 }
 
-console.log(results)
+console.log(results);
