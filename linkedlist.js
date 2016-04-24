@@ -23,7 +23,7 @@
 				temp.next = getNode(val);
 				this.length++;
 			},
-			insertNode: function(position) {
+			insertNode: function(position, val) {
 				if (Math.abs(position) > this.length + 1) {
 					console.log('Insert position greater than Linked List length + 1');
 				} else if (position < 0) {
@@ -34,6 +34,8 @@
 						while (position != 1) {
 							temp = temp.next;
 						}
+						var tempList = temp.next;
+						temp.next = getNode(val);
 					}
 				}
 			},
