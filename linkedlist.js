@@ -30,7 +30,10 @@
 					console.log('Position must be greater than 0 in a singly Linked List');
 				} else {
 					console.log('insert node at %s', position) {
-						
+						var temp = this. head;
+						while (position != 0) {
+
+						}
 					}
 				}
 			},
