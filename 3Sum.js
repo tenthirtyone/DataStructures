@@ -22,4 +22,9 @@ var dict = {};
 for (var i = 0; i < intArr.length; i++) {
 	dict[intArr[i]] = intArr[i];
 }
-console.log(dict);
+
+for (var i = 0; i < intArr.length; i++) {
+	if (dict[(target-intArr[i])]) {
+		results.push([intArr[i], dict[(target-intArr[i])]])
+	}
+}
