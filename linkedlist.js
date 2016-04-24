@@ -29,7 +29,7 @@
 				} else {
 					console.log('remove node %s', index);
 					var temp = this.head;
-					while (index !== 1) {
+					while (index !== 0) {
 						temp = temp.next;
 						index--;
 					}
