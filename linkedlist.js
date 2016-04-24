@@ -24,12 +24,16 @@
 				this.length++;
 			},
 			insertNode: function(position) {
-
+				if (Math.ads(position))
 			},
 			removeNode: function(position) {
 				if (Math.abs(position) > this.length) {
 					console.log('Removal position greater than Linked List length');
-				} else {
+				} else  if (position < 0) {
+					console.log('Position must be greater than 0')
+				}
+
+					{
 					console.log('remove node %s', position);
 					var temp = this.head;
 					while (position !== 1) {
