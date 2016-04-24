@@ -33,6 +33,7 @@
 						temp = temp.next;
 						index--;
 					}
+					temp.next = temp.next.next;
 					console.log(temp);
 				}
 			}
