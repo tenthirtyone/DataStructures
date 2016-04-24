@@ -28,3 +28,5 @@ for (var i = 0; i < intArr.length; i++) {
 		results.push([intArr[i], dict[(target-intArr[i])]]);
 	}
 }
+
+console.log(results)
