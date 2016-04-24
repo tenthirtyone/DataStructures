@@ -78,4 +78,5 @@
 	ll.toString();
 	ll.removeNode(2);
 	ll.toString();
+	ll.insertNode(1, 9);
 }());
