@@ -50,5 +50,5 @@
 	ll.addNode(6);
 	ll.addNode(9);
 	ll.toString();
-	ll.removeNode(2)
+	ll.removeNode(2);
 }());
