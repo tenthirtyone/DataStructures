@@ -41,7 +41,6 @@
 					var tempList = temp.next;
 					temp.next = getNode(val);
 					temp.next.next = tempList;
-				
 				}
 			},
 			removeNode: function(position) {
