@@ -7,5 +7,5 @@ ll.addNode(3);
 ll.addNode(4);
 ll.addNode(5);
 ll.insertNode(0, 9);
-ll.removeNode(0)
+ll.removeNode(0);
 ll.toString();
