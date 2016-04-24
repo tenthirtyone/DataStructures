@@ -31,7 +31,7 @@
 				} else if (position === 0) {
 					var tempList = this.head;
 					this.head = getNode(val);
-					this.head = tempList;
+					this.head.next = tempList;
 				} else {
 					console.log('insert node at %s', position) 
 					var temp = this.head;
