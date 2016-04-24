@@ -26,13 +26,15 @@
 			insertNode: function(position) {
 				if (Math.abs(position) > this.length + 1) {
 					console.log('Insert position greater than Linked List length + 1');
+				} else if (position < 0) {
+					console.log('Position must be greater than 0 in a singly Linked List');
 				}
 			},
 			removeNode: function(position) {
 				if (Math.abs(position) > this.length) {
 					console.log('Removal position greater than Linked List length');
 				} else  if (position < 0) {
-					console.log('Position must be greater than 0 in a Lingly Linked List');
+					console.log('Position must be greater than 0 in a singly Linked List');
 				}else {
 					console.log('remove node %s', position);
 					var temp = this.head;
