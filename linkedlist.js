@@ -27,7 +27,7 @@
 
 			},
 			removeNode: function(position) {
-				if (Math.abs(index) > this.length) {
+				if (Math.abs(position) > this.length) {
 					console.log('Removal position greater than Linked List length');
 				} else {
 					console.log('remove node %s', position);
