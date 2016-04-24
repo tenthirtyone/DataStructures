@@ -3,7 +3,7 @@
 
 	function linkedList() {
 		var linkedList = {
-			head: getNode(),
+			head: this.getNode(),
 			length: 0,
 			toString: function() {
 				var temp = this.head;
@@ -20,7 +20,7 @@
 				while (temp.next !== null) {
 					temp = temp.next;
 				}
-				temp.next = getNode(val);
+				temp.next = this.getNode(val);
 				this.length++;
 			},
 			getNode: function (val) {
@@ -38,7 +38,7 @@
 					console.log('Position must be greater than 0 in a singly Linked List');
 				} else if (position === 0) {
 					var tempList = this.head;
-					this.head = getNode(val);
+					this.head = this.getNode(val);
 					this.head.next = tempList;
 				} else {
 					var temp = this.head;
@@ -46,7 +46,7 @@
 						temp = temp.next;
 					}
 					var tempList = temp.next;
-					temp.next = getNode(val);
+					temp.next = this.getNode(val);
 					temp.next.next = tempList;
 				
 				}
