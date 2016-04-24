@@ -27,7 +27,7 @@
 				if (Math.abs(index) > this.length) {
 					console.log('Removal index greater than Linked List length');
 				} else {
-		
+					console.log('remove node %s', index)
 				}
 			}
 		}
