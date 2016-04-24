@@ -74,6 +74,6 @@
 	};
 
 	module.exports = {
-		LinkedList = linkedList
+		LinkedList: linkedList
 	}
 }());
