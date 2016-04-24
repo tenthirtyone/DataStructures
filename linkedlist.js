@@ -24,8 +24,8 @@
 				this.length++;
 			},
 			insertNode: function(position) {
-				if (Math.ads(position)) {
-					
+				if (Math.abs(position) > this.length + 1) {
+					console.log('Insert position greater than Linked List length + 1');
 				}
 			},
 			removeNode: function(position) {
