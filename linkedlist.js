@@ -87,4 +87,6 @@
 	ll.insertNode(1, 9);
 	ll.insertNode(0, 9);
 	ll.toString();
+	ll.removeNode(0);
+	ll.toString();
 }());
