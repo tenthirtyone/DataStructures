@@ -23,6 +23,13 @@
 				temp.next = getNode(val);
 				this.length++;
 			},
+			getNode: function (val) {
+				var node = {
+					val: val || 0,
+					next: null
+				}
+				return node;
+			},
 			insertNode: function(position, val) {
 				console.log('insert node at %s', position) 
 				if (Math.abs(position) > this.length + 1) {
@@ -65,28 +72,5 @@
 		return linkedList;
 	}
 
-	function getNode(val) {
-		var node = {
-			val: val || 0,
-			next: null
-		}
-		return node;
-	};
 
-	var ll = linkedList();
-	
-	ll.toString();
-	ll.addNode(1);
-	ll.addNode(2);
-	ll.addNode(3);
-	ll.addNode(4);
-	ll.addNode(5);
-	ll.toString();
-	ll.removeNode(2);
-	ll.toString();
-	ll.insertNode(1, 9);
-	ll.insertNode(0, 9);
-	ll.toString();
-	ll.removeNode(0);
-	ll.toString();
 }());
