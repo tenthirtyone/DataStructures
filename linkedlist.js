@@ -3,7 +3,7 @@
 
 	function linkedList() {
 		var linkedList = {
-			head: this.getNode(),
+			head: getNode(),
 			length: 0,
 			toString: function() {
 				var temp = this.head;
@@ -15,19 +15,12 @@
 				}
 				console.log(retArr);
 			},
-			getNode: function (val) {
-				var node = {
-					val: val || 0,
-					next: null
-				}
-				return node;
-			},
 			addNode: function(val) {
 				var temp = this.head;
 				while (temp.next !== null) {
 					temp = temp.next;
 				}
-				temp.next = this.getNode(val);
+				temp.next = getNode(val);
 				this.length++;
 			},
 			insertNode: function(position, val) {
@@ -38,7 +31,7 @@
 					console.log('Position must be greater than 0 in a singly Linked List');
 				} else if (position === 0) {
 					var tempList = this.head;
-					this.head = this.getNode(val);
+					this.head = getNode(val);
 					this.head.next = tempList;
 				} else {
 					var temp = this.head;
@@ -46,7 +39,7 @@
 						temp = temp.next;
 					}
 					var tempList = temp.next;
-					temp.next = this.getNode(val);
+					temp.next = getNode(val);
 					temp.next.next = tempList;
 				
 				}
@@ -72,8 +65,15 @@
 		return linkedList;
 	}
 
-	module.exports = {
-		LinkedList: linkedList
-	}
+	function getNode(val) {
+		var node = {
+			val: val || 0,
+			next: null
+		}
+		return node;
+	};
 
+	module.exports = {
+		LinkedList = linkedList
+	}
 }());
