@@ -30,7 +30,7 @@
 				if (Math.abs(position) > this.length) {
 					console.log('Removal position greater than Linked List length');
 				} else  if (position < 0) {
-					console.log('Position must be greater than 0 in a singly linked list');
+					console.log('Position must be greater than 0 in a singly Linked List');
 				}
 
 					{
