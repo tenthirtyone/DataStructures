@@ -28,7 +28,7 @@
 					console.log('Insert position greater than Linked List length + 1');
 				} else if (position < 0) {
 					console.log('Position must be greater than 0 in a singly Linked List');
-				} else if {
+				} else if (position === 0) {
 					var tempList = this.head;
 					this.head = getNode(val);
 					this.head = tempList;
