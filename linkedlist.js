@@ -15,6 +15,13 @@
 				}
 				console.log(retArr);
 			},
+			getNode: function (val) {
+				var node = {
+					val: val || 0,
+					next: null
+				}
+				return node;
+			},
 			addNode: function(val) {
 				var temp = this.head;
 				while (temp.next !== null) {
@@ -23,13 +30,7 @@
 				temp.next = this.getNode(val);
 				this.length++;
 			},
-			getNode: function (val) {
-				var node = {
-					val: val || 0,
-					next: null
-				}
-				return node;
-			},
+
 			insertNode: function(position, val) {
 				console.log('insert node at %s', position) 
 				if (Math.abs(position) > this.length + 1) {
