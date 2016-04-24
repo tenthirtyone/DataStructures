@@ -15,6 +15,13 @@
 				}
 				console.log(retArr);
 			},
+			getNode: function (val) {
+				var node = {
+					val: val || 0,
+					next: null
+				}
+				return node;
+			},
 			addNode: function(val) {
 				var temp = this.head;
 				while (temp.next !== null) {
