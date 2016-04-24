@@ -72,7 +72,7 @@
 		return linkedList;
 	}
 
-	module.exports {
+	module.exports = {
 		LinkedList: linkedList
 	}
 
