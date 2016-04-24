@@ -72,5 +72,8 @@
 		return linkedList;
 	}
 
+	module.exports {
+		LinkedList: linkedList
+	}
 
 }());
