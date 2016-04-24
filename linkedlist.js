@@ -34,7 +34,7 @@
 						index--;
 					}
 					temp.next = temp.next.next;
-					console.log(temp);
+					
 				}
 			}
 		}
