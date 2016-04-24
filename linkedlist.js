@@ -28,6 +28,7 @@
 					console.log('Removal index greater than Linked List length');
 				} else {
 					console.log('remove node %s', index);
+					var temp = this.head;
 					while (index !== 0) {
 						temp = temp.next;
 						index--;
