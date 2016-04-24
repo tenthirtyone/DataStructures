@@ -30,7 +30,6 @@
 				temp.next = this.getNode(val);
 				this.length++;
 			},
-
 			insertNode: function(position, val) {
 				console.log('insert node at %s', position) 
 				if (Math.abs(position) > this.length + 1) {
