@@ -24,7 +24,9 @@
 				this.length++;
 			},
 			insertNode: function(position) {
-				if (Math.ads(position))
+				if (Math.ads(position)) {
+					
+				}
 			},
 			removeNode: function(position) {
 				if (Math.abs(position) > this.length) {
