@@ -24,7 +24,13 @@
 				this.length++;
 			},
 			removeNode: function(index) {
+				if (Math.abs(index) > this.length) {
+					console.log('Removal index greater than Linked List length');
+				} else {
+					while (index != 0) {
 
+					}
+				}
 			}
 		}
 		return linkedList;
