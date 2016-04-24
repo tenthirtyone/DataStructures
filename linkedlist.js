@@ -23,15 +23,16 @@
 				temp.next = getNode(val);
 				this.length++;
 			},
-			removeNode: function(index) {
+			insertNode: function(index)
+			removeNode: function(position) {
 				if (Math.abs(index) > this.length) {
-					console.log('Removal index greater than Linked List length');
+					console.log('Removal position greater than Linked List length');
 				} else {
-					console.log('remove node %s', index);
+					console.log('remove node %s', position);
 					var temp = this.head;
-					while (index !== 1) {
+					while (position !== 1) {
 						temp = temp.next;
-						index--;
+						position--;
 					}
 					temp.next = temp.next.next;
 				}
